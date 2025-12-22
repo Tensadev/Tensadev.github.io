@@ -1,0 +1,40 @@
+baseURL: 'https://minimal-marketing.pages.dev'
+title: 'Minimal Marketing'
+languageCode: en-us
+DefaultContentLanguage: en
+enableEmoji: true
+enableGitInfo: true
+enableRobotsTXT: true
+canonifyURLs: true
+pagination.pagerSize: 9
+enableInlineShortcodes: true
+
+params:
+  author:
+  author_image: /images/defaults/author.jpg
+  og_image: /images/defaults/Test1.PNG
+  moto: "Track Productivity, That's an achievement too !"
+  description: "Remind yourself to do small, yet steady steps.
+it's all about consistency, improving, and being happy about every tiny step forward."
+  google_analytics_id: '' # @NOTE: To remove the G2A tag, juste leave this key to an empty string.
+  cta:
+    text: Get TaskyPad
+    url: https://www.youtube.com/watch?v=oHg5SJYRHA0
+  footer:
+    social_url: https://twitter.com/Tensadev
+    social_username: '@Tensadev'
+
+
+taxonomies:
+  category: Categories
+  tag: Tags
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+module:
+  hugoVersion:
+    extended: true
+    min: "0.110.0"

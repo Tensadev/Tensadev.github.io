@@ -1,0 +1,478 @@
+{{ define "main" }}
+<div class="">
+  <div class="relative isolate">
+    <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+      <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+    <div class="py-24 sm:py-32 lg:pb-40">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">{{ .Site.Params.moto }}</h1>
+          <p class="mt-6 text-lg leading-8 text-gray-300">{{ .Site.Params.description }}</p>
+          <div class="mt-6 flex items-center justify-center gap-x-6">
+            <a href="{{ .Site.Params.cta.url }}" class="rounded-md bg-indigo-500 px-4 py-3 text-lg transition duration-[500ms] font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">
+              {{ .Site.Params.cta.text }}
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-flex hidden" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" /></svg>
+            </a>
+            <a href="/offer" class="text-xl font-semibold leading-6 text-white hidden">Learn more <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <br>
+        <br>
+        <style>
+          * {
+			/*box-sizing: border-box;*/
+
+			/* For debugging */
+			outline: 1px solid green !important;
+		}
+        </style>
+<script>
+  window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Success!");
+    })
+  });
+});
+
+</script>
+<form id="my-form" action="https://script.google.com/macros/s/AKfycbwbaeUwX9KAau_NzfiTg27UyI7nqKtPC5W5kByHo3-kNKEU10M0s9R_sDujHwFJiJ688Q/exec" method="POST" class="">
+  <div class="">
+    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-12">
+
+      <div class="sm:col-span-3 sm:col-start-5 scale-105">
+        <div class="mt-1">
+          <input type="email" placeholder="enter your email ya dummy" name="Email" id="email" autocomplete="email" class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" required>
+        </div>
+        
+      </div>
+      
+    <div class="flex sm:col-span-4">
+      <button type="submit" class="transform 
+                                        transition duration-200 hover:scale-110 rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Join the wait list</button>
+    </div>
+    </div>
+  </div>
+</form>
+
+        {{ $p1image := resources.Get .Site.Params.og_image }}
+        {{ with $p1image }}
+          {{ with .Fill (printf "%dx%d Center webp q90" 2432 1442) }}
+            <img src="{{ .RelPermalink }}" alt="App screenshot" width="2432" height="1442" class="mt-16 rounded-md bg-white/5 shadow-2xl ring-2 ring-white/10 sm:mt-24 hover:scale-[102%] transition duration-[500ms]">
+          {{ end }}
+        {{ end }}
+        
+            {{ $v := resources.Get "images/defaults/2025-11-25 18-33-43.mp4" | fingerprint }}
+
+            {{ $v0 := resources.Get "images/defaults/Stays-On-Top.mp4" | fingerprint }}
+            {{ $v01 := resources.Get "images/defaults/Stays-On-Top.mkv" | fingerprint }}
+            {{ $v2 := resources.Get "images/defaults/Add-Task.mp4" | fingerprint }}
+            {{ $v3 := resources.Get "images/defaults/Save-Quit.mp4" | fingerprint }}
+            {{ $v4 := resources.Get "images/defaults/Edit-Reset-Delete.mp4" | fingerprint }}
+            {{ $v5 := resources.Get "images/defaults/Drag-Drop-And-Count-1-min.mp4" | fingerprint }}
+            {{ $v51 := resources.Get "images/defaults/Drag-And-All-With-Tooltip.mp4" | fingerprint }}
+            {{ $v6 := resources.Get "images/defaults/Expand-Add-A-Lot.mp4" | fingerprint }}
+
+      </div>
+    </div>
+    <div class="-z-50 absolute inset-x-0 top-[calc(100%-13rem)] transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+      <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+  </div>
+  <div class="p-6 px-32 flex w-full items-center grid-cols-2">
+      <div class="p-6 w-full text-2xl font-semibold  space-y-4">
+      <!--p>Protect your focus</p!-->
+      <p>Keeps you in focus</p>
+      <!--p class="text-xl font-medium text-gray-400">Crafted for seemless experience, so the interface never affect your attention and focus</p!-->
+      <p class="text-xl font-medium text-gray-400">Crafted for a seemless user experience, without the need to switch apps. Distraction is no more.</p>
+
+      <p>Stays on top so you never forget (iNTERACTOVITY AT ITS CORE ->  DRAG DROP)</p>
+      <p class="text-xl font-medium text-gray-400">Made to stick on your screen as a small utility, so you never have to switch apps / so you never have to search for it or forget using it (From drag / drop to simple buttons and hortcuts, everithing can be done intuitively and easily with both mouse and keyboard)</p>
+      <p>Handy for everyday tasks (Keep yourself organized)</p>
+      <p class="text-xl font-medium text-gray-400">Designed for every day use, woth a small interface that takes a small amount of your screen never bothering you (Move and store all your tasks in the order of your choice under the expand view, keeping it all saved and in sync</p>
+      </div>
+      <div class="p-6 w-full text-left text-lg">
+      <p>keep focus on 4 tasks only</p>
+      </div>
+    </div>
+  <div class="flex justify-center flex-col items-center ">
+    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl mx-auto text-center">Focus made simple.</h1>
+    <p class="mt-6 text-xl text-gray-400 text-center mb-12">Core features that makes task tracking easy, while maintaining you sharp and on focus.</p>  
+    <p class="tracking-tight font-thin text-sm text-gray-300 mx-auto"><span class="underline-offset-4 underline">Reviews from our customers</span> 👇</p>
+  </div>
+  <section class="bg-gray-900 py-24 sm:py-32">
+    <div class="mx-auto max-w-5xl px-6 lg:px-8">
+      <div class="mx-auto grid grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <div class="hidden flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
+          <img class="h-12 self-start" src="https://tailwindui.com/img/logos/tuple-logo-white.svg" alt="">
+          <figure class="mt-10 flex flex-auto flex-col justify-between">
+            <blockquote class="text-lg leading-8 text-white">
+              <p>“Amet amet eget scelerisque tellus sit neque faucibus non eleifend. Integer eu praesent at a. Ornare arcu gravida natoque erat et cursus tortor consequat at. Vulputate gravida sociis enim nullam ultricies habitant malesuada lorem ac. Tincidunt urna dui pellentesque sagittis.”</p>
+            </blockquote>
+            <figcaption class="mt-10 flex items-center gap-x-6">
+              <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div class="text-base">
+                <div class="font-semibold text-white">Judith Black</div>
+                <div class="mt-1 text-gray-400">CEO of Tuple</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="hidden flex flex-col border-t border-white/10 pt-10 sm:pt-16 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0 xl:pl-20">
+          <img class="h-12 self-start" src="https://tailwindui.com/img/logos/reform-logo-white.svg" alt="">
+          <figure class="mt-10 flex flex-auto flex-col justify-between">
+            <blockquote class="text-lg leading-8 text-white">
+              <p>“Excepteur veniam labore ullamco eiusmod. Pariatur consequat proident duis dolore nulla veniam reprehenderit nisi officia voluptate incididunt exercitation exercitation elit. Nostrud veniam sint dolor nisi ullamco.”</p>
+            </blockquote>
+            <figcaption class="mt-10 flex items-center gap-x-6">
+              <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div class="text-base">
+                <div class="font-semibold text-white">Joseph Rodriguez</div>
+                <div class="mt-1 text-gray-400">CEO of Reform</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="gap-y-6   mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-2 gap-x-6">
+        <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 bg-indigo-800 hover:bg-indigo-500 transition duration-[500ms] rounded-[1.8rem] p-[1.6rem]">
+            <h3 class="font-semibold text-white text-xl">Stays on top</h3>
+          <img class="h-4 self-start" src="https://tailwindui.com/img/logos/tuple-logo-white.svg" alt="">
+          <figure class="flex flex-auto flex-col justify-between">
+            <blockquote class="text-base text-gray-300">
+              <p>Use is at Will. Forget about context switching, and focus on doing as Taskypad Stays on top no matter where. Never forget task tracking, as TaskyPad sticks on top of your screen even when on switching windows.</p>
+            </blockquote>
+            <div class="overflow-hidden rounded-[12px] mt-10 mb-[1.6rem] ">
+              <div class="h-[15rem] rounded-[12px]">
+          <video class=" rounded-[12px]" loop="" muted="" poster="https://filepilot.tech/Assets/PanelsTabs.png" autoplay="true">
+						<source src="{{ $v0.RelPermalink }}" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+          </div>
+          </div>
+            <figcaption class="mt-10 hidden flex items-center gap-x-6">
+              <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div class="text-base">
+                <div class="font-semibold text-white">Judith Black</div>
+                <div class="mt-1 text-gray-400">CEO of Tuple</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 bg-indigo-800 hover:bg-indigo-500 transition duration-[500ms] rounded-[1.8rem] p-[1.6rem]">
+            <h3 class="font-semibold text-white text-xl">Simple & compact</h3>
+          <img class="h-4 self-start" src="https://tailwindui.com/img/logos/tuple-logo-white.svg" alt="">
+          <figure class="flex flex-auto flex-col items-center">
+            <blockquote class="text-base text-gray-300">
+              <p>Easily manage your tasks within a small and concise window, staying on front of you, with simple shortcut and intuitive user experience</p>
+            </blockquote>
+            <div class="overflow-hidden rounded-[12px]mb-[1.6rem] ">
+              <div class="h-[20rem] rounded-[12px] mt-10">
+          <video class=" rounded-[12px]" loop="" muted="" poster="https://filepilot.tech/Assets/PanelsTabs.png" autoplay="true">
+						<source src="{{ $v2.RelPermalink }}" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+          </div>
+          </div>
+            <figcaption class="mt-10 hidden flex items-center gap-x-6">
+              <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div class="text-base">
+                <div class="font-semibold text-white">Judith Black</div>
+                <div class="mt-1 text-gray-400">CEO of Tuple</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 bg-indigo-800 hover:bg-indigo-500 transition duration-[500ms] rounded-[1.8rem] p-[1.6rem]">
+            <h3 class="font-semibold text-white text-xl">Save on quit</h3>
+          <img class="h-4 self-start" src="https://tailwindui.com/img/logos/tuple-logo-white.svg" alt="">
+          <figure class="flex flex-auto flex-col justify-between">
+            <blockquote class="text-base text-gray-300">
+              <p>Never loose your tracking progress, as TaskyPad saves everything the moment the app is closed.</p>
+            </blockquote>
+            <div class="overflow-hidden rounded-[12px] mt-10 mb-[1.6rem] ">
+              <div class="h-[23rem] rounded-[12px]">
+          <video class=" rounded-[12px] max-w-[68.0rem]" loop="" muted="" poster="https://filepilot.tech/Assets/PanelsTabs.png" autoplay="true">
+						<source src="{{ $v3.RelPermalink }}" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+          </div>
+          </div>
+            <figcaption class="mt-10 hidden flex items-center gap-x-6">
+              <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div class="text-base">
+                <div class="font-semibold text-white">Judith Black</div>
+                <div class="mt-1 text-gray-400">CEO of Tuple</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 bg-indigo-800 hover:bg-indigo-500 transition duration-[500ms] rounded-[1.8rem] p-[1.6rem]">
+            <h3 class="font-semibold text-white text-xl">Stay on focus</h3>
+          <img class="h-4 self-start" src="https://tailwindui.com/img/logos/tuple-logo-white.svg" alt="">
+          <figure class="flex flex-auto flex-col justify-between">
+            <blockquote class="text-base text-gray-300">
+              <p>Keep yourself on focus, as the app is designed with simplicity of colours, and features, and things to seemlessly update without disturbing your focus in any way or shape. The App delibaritely constrain you to 4 tasks of your choice, since that's the most our brain can handle while staying at maximum focus. Focus at the top of our priority.</p>
+            </blockquote>
+            <div class="overflow-hidden rounded-[12px] mt-10 mb-[1.6rem] ">
+              <div class="h-[23rem] rounded-[12px]">
+          <video class=" rounded-[12px] max-w-[68.0rem]" loop="" muted="" poster="https://filepilot.tech/Assets/PanelsTabs.png" autoplay="true">
+						<source src="{{ $v4.RelPermalink }}" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+          </div>
+          </div>
+            <figcaption class="mt-10 hidden flex items-center gap-x-6">
+              <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div class="text-base">
+                <div class="font-semibold text-white">Judith Black</div>
+                <div class="mt-1 text-gray-400">CEO of Tuple</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 bg-indigo-800 hover:bg-indigo-500 transition duration-[500ms] rounded-[1.8rem] p-[1.6rem]">
+            <h3 class="font-semibold text-white text-xl">Drag & drop</h3>
+          <img class="h-4 self-start" src="https://tailwindui.com/img/logos/tuple-logo-white.svg" alt="">
+          <figure class="flex flex-auto flex-col justify-between">
+            <blockquote class="text-base text-gray-300">
+              <p>Easily hold-click and move tasks around and drop em anywhere you want to organize at will.</p>
+            </blockquote>
+            <div class="overflow-hidden rounded-[12px] mt-10 mb-[1.6rem] ">
+              <div class="h-[23rem] rounded-[12px]">
+          <video class=" rounded-[12px] max-w-[68.0rem]" loop="" muted="" poster="https://filepilot.tech/Assets/PanelsTabs.png" autoplay="true">
+						<source src="{{ $v5.RelPermalink }}" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+          </div>
+          </div>
+            <figcaption class="mt-10 hidden flex items-center gap-x-6">
+              <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div class="text-base">
+                <div class="font-semibold text-white">Judith Black</div>
+                <div class="mt-1 text-gray-400">CEO of Tuple</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 bg-indigo-800 hover:bg-indigo-500 transition duration-[500ms] rounded-[1.8rem] p-[1.6rem]">
+            <h3 class="font-semibold text-white text-xl">All in one place</h3>
+          <img class="h-4 self-start" src="https://tailwindui.com/img/logos/tuple-logo-white.svg" alt="">
+          <figure class="flex flex-auto flex-col justify-between">
+            <blockquote class="text-base text-gray-300">
+              <p>Expand the window and manage all your tasks and organize them, or keep and inventory/history of em hidden, while you keep only 4 tasks to focus on at the moment and switch around</p>
+            </blockquote>
+            <div class="overflow-hidden rounded-[12px] mt-10 mb-[1.6rem] ">
+              <div class="h-[23rem] rounded-[12px]">
+          <video class=" rounded-[12px] max-w-[68.0rem]" loop="" muted="" poster="https://filepilot.tech/Assets/PanelsTabs.png" autoplay="true">
+						<source src="{{ $v6.RelPermalink }}" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+          </div>
+          </div>
+            <figcaption class="mt-10 hidden flex items-center gap-x-6">
+              <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div class="text-base">
+                <div class="font-semibold text-white">Judith Black</div>
+                <div class="mt-1 text-gray-400">CEO of Tuple</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 bg-indigo-800 hover:bg-indigo-500 transition duration-[500ms] rounded-[1.8rem] p-[1.6rem]">
+            <h3 class="font-semibold text-white text-xl">Suble & Simple and Concise</h3>
+          <img class="h-4 self-start" src="https://tailwindui.com/img/logos/tuple-logo-white.svg" alt="">
+          <figure class="flex flex-auto flex-col justify-between">
+            <blockquote class="text-base text-gray-300">
+              <p>Keep yourself focused with our suble design and concise overlay, allowing you to focus on doing, without visual clutter or noise disturbing your peace and focus. Simplicity and ease of use remains our top priotity.</p>
+            </blockquote>
+            <div class="overflow-hidden rounded-[12px] mt-10 mb-[1.6rem] ">
+              <div class="h-[23rem] rounded-[12px]">
+          <video class=" rounded-[12px] max-w-[68.0rem]" loop="" muted="" poster="https://filepilot.tech/Assets/PanelsTabs.png" autoplay="true">
+						<source src="{{ $v51.RelPermalink }}" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+          </div>
+          </div>
+            <figcaption class="mt-10 hidden flex items-center gap-x-6">
+              <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div class="text-base">
+                <div class="font-semibold text-white">Judith Black</div>
+                <div class="mt-1 text-gray-400">CEO of Tuple</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 bg-indigo-800 hover:bg-indigo-500 transition duration-[500ms] rounded-[1.8rem] p-[1.6rem]">
+            <h3 class="font-semibold text-white text-xl">Stay organized</h3>
+          <img class="h-4 self-start" src="https://tailwindui.com/img/logos/tuple-logo-white.svg" alt="">
+          <figure class="flex flex-auto flex-col justify-between">
+            <blockquote class="text-base text-gray-300">
+              <p>Keep yourself organized by stacking your tasks and keeping em hidden on Expand mode.</p>
+            </blockquote>
+            <div class="overflow-hidden rounded-[12px] mt-10 mb-[1.6rem] ">
+              <div class="h-[23rem] rounded-[12px]">
+          <video class=" rounded-[12px] max-w-[68.0rem]" loop="" muted="" poster="https://filepilot.tech/Assets/PanelsTabs.png" autoplay="true">
+						<source src="{{ $v6.RelPermalink }}" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+          </div>
+          </div>
+            <figcaption class="mt-10 hidden flex items-center gap-x-6">
+              <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div class="text-base">
+                <div class="font-semibold text-white">Judith Black</div>
+                <div class="mt-1 text-gray-400">CEO of Tuple</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="hidden flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 bg-indigo-800 hover:bg-indigo-500 transition duration-[500ms] rounded-[1.8rem] p-[1.6rem]">
+            <h3 class="font-semibold text-white text-xl">Customization</h3>
+          <img class="h-4 self-start" src="https://tailwindui.com/img/logos/tuple-logo-white.svg" alt="">
+          <figure class="flex flex-auto flex-col justify-between">
+            <blockquote class="text-base text-gray-300">
+              <p>Cutomize your experience at will to keep yourself as focused as possible aceing your tasks in style</p>
+            </blockquote>
+            <div class="overflow-hidden rounded-[12px] mt-10 mb-[1.6rem] ">
+              <div class="h-[23rem] rounded-[12px]">
+          <video class=" rounded-[12px] max-w-[68.0rem]" loop="" muted="" poster="https://filepilot.tech/Assets/PanelsTabs.png" autoplay="true">
+						<source src="{{ $v.RelPermalink }}" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+          </div>
+          </div>
+            <figcaption class="mt-10 hidden flex items-center gap-x-6">
+              <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div class="text-base">
+                <div class="font-semibold text-white">Judith Black</div>
+                <div class="mt-1 text-gray-400">CEO of Tuple</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="flex flex-col border-t border-white/10 pt-10 sm:pt-16 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0 xl:pl-20 bg-indigo-800 border-l rounded-[1.0rem] p-1">
+          <img class="h-12 self-start" src="https://tailwindui.com/img/logos/reform-logo-white.svg" alt="">
+          <figure class="mt-10 flex flex-auto flex-col justify-between">
+            <blockquote class="text-lg leading-8 text-white">
+              <p>“Excepteur veniam labore ullamco eiusmod. Pariatur consequat proident duis dolore nulla veniam reprehenderit nisi officia voluptate incididunt exercitation exercitation elit. Nostrud veniam sint dolor nisi ullamco.”</p>
+            </blockquote>
+            <figcaption class="mt-10 flex items-center gap-x-6">
+              <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+              <div class="text-base">
+                <div class="font-semibold text-white">Joseph Rodriguez</div>
+                <div class="mt-1 text-gray-400">CEO of Reform</div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        
+      </div>
+    </div>
+</div>
+  </section>
+  
+  <section class="bg-indigo-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Common Questions</h2>
+            
+            <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Find answers to frequently asked questions about our pricing plans and features.</p>
+
+        </div>
+        
+        <div class="space-y-6">
+            
+            <div class="border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow duration-200">
+                <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors duration-200 focus:outline-none" 
+                        onclick="this.parentElement.querySelector('.faq-content').classList.toggle('hidden');
+                                 this.querySelector('svg').classList.toggle('rotate-180')">
+                    <span class="text-lg font-medium text-gray-900">What type of payment do you accept?</span>
+                    <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="faq-content hidden animate-[fadeIn_800ms_ease_both] border-t">
+                    <div class="p-6 prose prose-sm sm:prose lg:prose-lg max-w-none">
+                        We accept all major credit cards, PayPal, and bank transfers. All payments are processed securely through our payment providers.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow duration-200">
+                <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors duration-200 focus:outline-none" 
+                        onclick="this.parentElement.querySelector('.faq-content').classList.toggle('hidden');
+                                 this.querySelector('svg').classList.toggle('rotate-180')">
+                    <span class="text-lg font-medium text-gray-900">Do you offer custom pricing for larger teams?</span>
+                    <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="faq-content hidden border-t">
+                    <div class="p-6 prose prose-sm sm:prose lg:prose-lg max-w-none">
+                        Yes! If you have specific needs or a larger team, please contact our sales team for custom pricing tailored to your requirements.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow duration-200">
+                <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors duration-200 focus:outline-none" 
+                        onclick="this.parentElement.querySelector('.faq-content').classList.toggle('hidden');
+                                 this.querySelector('svg').classList.toggle('rotate-180')">
+                    <span class="text-lg font-medium text-gray-900">What&#39;s included in the free updates?</span>
+                    <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="faq-content hidden border-t">
+                    <div class="p-6 prose prose-sm sm:prose lg:prose-lg max-w-none">
+                        Free updates include all new features, improvements, and bug fixes released during your subscription period. You&rsquo;ll always have access to the latest version.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow duration-200">
+                <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors duration-200 focus:outline-none" 
+                        onclick="this.parentElement.querySelector('.faq-content').classList.toggle('hidden');
+                                 this.querySelector('svg').classList.toggle('rotate-180')">
+                    <span class="text-lg font-medium text-gray-900">What kind of support is included?</span>
+                    <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="faq-content hidden border-t">
+                    <div class="p-6 prose prose-sm sm:prose lg:prose-lg max-w-none">
+                        All plans include technical support, with varying response times based on your plan level. Enterprise customers get priority support with dedicated account managers.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border rounded-lg overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow duration-200">
+                <button class="w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition-colors duration-200 focus:outline-none" 
+                        onclick="this.parentElement.querySelector('.faq-content').classList.toggle('hidden');
+                                 this.querySelector('svg').classList.toggle('rotate-180')">
+                    <span class="text-lg font-medium text-gray-900">Can I upgrade or downgrade my plan?</span>
+                    <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="faq-content hidden border-t">
+                    <div class="p-6 prose prose-sm sm:prose lg:prose-lg max-w-none">
+                        Yes, you can change your plan at any time. When upgrading, you&rsquo;ll be prorated for the remainder of your billing period. When downgrading, changes take effect at the next billing cycle.
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+{{ end }}
