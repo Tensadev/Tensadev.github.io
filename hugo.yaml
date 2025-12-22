@@ -1,5 +1,5 @@
-baseURL: 'https://minimal-marketing.pages.dev'
-title: 'Minimal Marketing'
+baseURL: 'https://tensadev.github.io'
+title: 'TaskyPad - Track your productivity !'
 languageCode: en-us
 DefaultContentLanguage: en
 enableEmoji: true
@@ -38,3 +38,6 @@ module:
   hugoVersion:
     extended: true
     min: "0.110.0"
+caches:
+  images:
+    dir: :cacheDir/images
