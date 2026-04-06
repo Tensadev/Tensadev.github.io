@@ -153,8 +153,8 @@
       <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
     </div>
   </div>
-  <div class="p-6 px-32 flex w-full items-center grid-cols-2">
-      <div class="p-6 w-full text-2xl font-semibold  space-y-4">
+  <div class="p-6 px-16 flex flex-wrap items-center ">
+      <div class="p-6 max-w-xl text-2xl font-semibold  space-y-4">
       <!--p>Protect your focus</p!-->
       <p>Keeps you in focus</p>
       <!--p class="text-xl font-medium text-gray-400">Crafted for seemless experience, so the interface never affect your attention and focus</p!-->
@@ -165,11 +165,11 @@
       <p>Handy for everyday tasks</p>
       <p class="text-xl font-medium text-gray-400">Designed for every day use, with a simple and intuitive interface with shortcuts, never bothering you on day-to-day use.</p>
       </div>
-      <div class="p-6 w-full text-left text-lg flex flex-col items-center">
-      <img src="{{ $im.RelPermalink }}" />
-      <a href="{{ .Site.Params.cta.url }}" class="rounded-md bg-indigo-500 px-4 py-3 text-lg transition duration-[500ms] font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">
+      <div class="p-6 flex-auto w-64 text-left text-lg flex flex-col items-center">
+        <span class="max-w-md"><img src="{{ $im.RelPermalink }}" /></span>
+        <a href="{{ .Site.Params.cta.url }}" class="rounded-md bg-indigo-500 px-4 py-3 text-lg transition duration-[500ms] font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400">
               {{ .Site.Params.cta.text }}
-            </a>
+        </a>
       </div>
     </div>
   <div class="flex justify-center flex-col items-center mt-16 ">
