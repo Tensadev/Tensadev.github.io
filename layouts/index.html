@@ -110,12 +110,11 @@
             {{ $im := resources.Get "images/defaults/overlay_9094121.png" | fingerprint }}
 
             {{ $v0 := resources.Get "images/defaults/Stays-On-Top.mp4" | fingerprint }}
-            {{ $v01 := resources.Get "images/defaults/Stays-On-Top.mkv" | fingerprint }}
+            
             {{ $v2 := resources.Get "images/defaults/Add-Task.mp4" | fingerprint }}
             {{ $v3 := resources.Get "images/defaults/Save-Quit.mp4" | fingerprint }}
             {{ $v4 := resources.Get "images/defaults/Edit-Reset-Delete.mp4" | fingerprint }}
             {{ $v5 := resources.Get "images/defaults/Drag-Drop-And-Count-1-min.mp4" | fingerprint }}
-            {{ $v51 := resources.Get "images/defaults/Drag-And-All-With-Tooltip.mp4" | fingerprint }}
             {{ $v6 := resources.Get "images/defaults/Expand-Add-A-Lot.mp4" | fingerprint }}
 
             <form id="my-form" action="https://script.google.com/macros/s/AKfycbwbaeUwX9KAau_NzfiTg27UyI7nqKtPC5W5kByHo3-kNKEU10M0s9R_sDujHwFJiJ688Q/exec" method="POST" class="">
@@ -226,13 +225,6 @@
 					</video>
           </div>
           </div>
-            <figcaption class="mt-10 hidden flex items-center gap-x-6">
-              <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
-              <div class="text-base">
-                <div class="font-semibold text-white">Judith Black</div>
-                <div class="mt-1 text-gray-400">CEO of Tuple</div>
-              </div>
-            </figcaption>
           </figure>
         </div>
         <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 bg-indigo-800 hover:bg-indigo-500 transition duration-[500ms] rounded-[1.8rem] p-[1.6rem]">
@@ -331,7 +323,7 @@
             </figcaption>
           </figure>
         </div>
-        <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 bg-indigo-800 hover:bg-indigo-500 transition duration-[500ms] rounded-[1.8rem] p-[1.6rem]">
+        <div class="hidden flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 bg-indigo-800 hover:bg-indigo-500 transition duration-[500ms] rounded-[1.8rem] p-[1.6rem]">
             <h3 class="font-semibold text-white text-xl">All in one place</h3>
           <img class="h-4 self-start" src="https://tailwindui.com/img/logos/tuple-logo-white.svg" alt="">
           <figure class="flex flex-auto flex-col justify-between">
@@ -364,10 +356,6 @@
             </blockquote>
             <div class="overflow-hidden rounded-[12px] mt-10 mb-[1.6rem] ">
               <div class="h-[20rem] rounded-[12px]">
-          <video class=" rounded-[12px]" loop="" muted="" poster="" autoplay="true">
-						<source src="{{ $v51.RelPermalink }}" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
           </div>
           </div>
             <figcaption class="mt-10 hidden flex items-center gap-x-6">
@@ -403,17 +391,17 @@
             </figcaption>
           </figure>
         </div>
-        <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 bg-indigo-800 hover:bg-indigo-500 transition duration-[500ms] rounded-[1.8rem] p-[1.6rem]">
+        <div class="hidden flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 bg-indigo-800 hover:bg-indigo-500 transition duration-[500ms] rounded-[1.8rem] p-[1.6rem]">
             <h3 class="font-semibold text-white text-xl">Customization</h3>
           <img class="h-4 self-start" src="https://tailwindui.com/img/logos/tuple-logo-white.svg" alt="">
           <figure class="flex flex-auto flex-col justify-between">
             <blockquote class="text-base text-gray-300">
-              <p>Cutomize your experience at will to keep yourself as focused as possible aceing your tasks in style.</p>
+              <p>Customize your experience at will to keep yourself as focused as possible aceing your tasks in style.</p>
             </blockquote>
             <div class="overflow-hidden rounded-[12px] mt-10 mb-[1.6rem] ">
               <div class="h-[23rem] rounded-[12px]">
           <video class=" rounded-[12px] max-w-[68.0rem]" loop="" muted="" poster="" autoplay="true">
-						<source src="{{ $v.RelPermalink }}" type="video/mp4">
+						<source src="{{ $v6.RelPermalink }}" type="video/mp4">
 						Your browser does not support the video tag.
 					</video>
           </div>
