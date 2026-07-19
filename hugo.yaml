@@ -1,5 +1,5 @@
-baseURL: 'https://tensadev.github.io'
-title: 'TaskyPad - Track your productivity !'
+baseURL: 'https://minimal-marketing.pages.dev'
+title: 'Minimal Marketing'
 languageCode: en-us
 DefaultContentLanguage: en
 enableEmoji: true
@@ -19,7 +19,7 @@ it's all about consistency, improving, and being happy about every tiny step for
   google_analytics_id: '' # @NOTE: To remove the G2A tag, juste leave this key to an empty string.
   cta:
     text: Get TaskyPad
-    url: https://www.youtube.com/watch?v=oHg5SJYRHA0
+    url: https://github.com/RedaMazoz/redamazoz.github.io/releases/download/0.1/TaskyPad.zip
   footer:
     social_url: https://twitter.com/Tensadev
     social_username: '@Tensadev'
@@ -38,6 +38,3 @@ module:
   hugoVersion:
     extended: true
     min: "0.110.0"
-caches:
-  images:
-    dir: :cacheDir/images
