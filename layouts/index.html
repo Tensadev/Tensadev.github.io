@@ -57,9 +57,9 @@
     })
     .then(response => {
 			if (!response.ok) {
-				throw new Error('Server responded with status ' + response.status);
+				//throw new Error('Server responded with status ' + response.status);
 			}
-			return response.text();
+			//return response.text();
 		})
 		.then(data => {
 			console.log('Success:', data);
@@ -110,7 +110,6 @@
           {{ end }}
         {{ end }}
         
-            {{ $v := resources.Get "images/defaults/2025-11-25 18-33-43.mp4" | fingerprint }}
             {{ $im := resources.Get "images/defaults/overlay_9094121.png" | fingerprint }}
 
             {{ $v0 := resources.Get "images/defaults/Stays-On-Top.mp4" | fingerprint }}
@@ -260,7 +259,7 @@
           <img class="h-4 self-start" src="https://tailwindui.com/img/logos/tuple-logo-white.svg" alt="">
           <figure class="flex flex-auto flex-col items-center">
             <blockquote class="text-base text-gray-300">
-              <p>Never loose your progress, as everything is saved the moment you close the app.</p>
+              <p>Never lose your progress, as everything is saved the moment you close the app.</p>
             </blockquote>
             <div class="overflow-hidden rounded-[12px] mt-10 mb-[1.6rem] ">
               <div class="h-[20rem] rounded-[12px]">
@@ -280,7 +279,7 @@
           </figure>
         </div>
         <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 bg-indigo-800 hover:bg-indigo-500 transition duration-[500ms] rounded-[1.8rem] p-[1.6rem]">
-            <h3 class="font-semibold text-white text-xl">Stay on focus</h3>
+            <h3 class="font-semibold text-white text-xl">Stay in focus</h3>
           <img class="h-4 self-start" src="https://tailwindui.com/img/logos/tuple-logo-white.svg" alt="">
           <figure class="flex flex-auto flex-col items-center">
             <blockquote class="text-base text-gray-300">

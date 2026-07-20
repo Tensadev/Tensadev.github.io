@@ -13,9 +13,9 @@ params:
   author:
   author_image: /images/defaults/author.jpg
   og_image: /images/defaults/Test1.PNG
-  moto: "Track Productivity, That's an achievement too !"
+  moto: "Track Productivity, that's an achievement too !"
   description: "Remind yourself to do small, yet steady steps.
-it's all about consistency, improving, and being happy about every tiny step forward."
+It's all about consistency and being happy with every tiny step forward."
   google_analytics_id: '' # @NOTE: To remove the G2A tag, juste leave this key to an empty string.
   cta:
     text: Get TaskyPad
