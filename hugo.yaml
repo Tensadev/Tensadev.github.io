@@ -12,7 +12,7 @@ enableInlineShortcodes: true
 params:
   author:
   author_image: /images/defaults/author.jpg
-  og_image: /images/defaults/Test1.PNG
+  og_image: /images/defaults/TaskyPad-Desktop.png
   moto: "Track Productivity, that's an achievement too !"
   description: "Remind yourself to do small, yet steady steps.
 It's all about consistency and being happy with every tiny step forward."
